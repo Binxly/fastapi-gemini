@@ -19,10 +19,13 @@ curl -X 'POST' \
 }'
 ```
 Use [JWT.io](https://www.jwt.io/) to test auth.
-Auth Token (replace ****** with your generated web token):
+
+Auth Token:
 ```bash
 curl -X POST "http://127.0.0.1:8000/chat" \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer ******" \
 -d '{"prompt": "Why is the sky blue?"}'
 ```
+
+ replace ****** with your generated web token
